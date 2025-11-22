@@ -1,0 +1,12 @@
+.footer {
+  padding: 0 20px;
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 100%;
+  color: #212121;
+  opacity: 0.4;
+  font-family: "Poppins";
+}

@@ -18,8 +18,9 @@ Spots is a responsive image-sharing web project that allows users to view a prof
 
 **GitHub**
 
-- [Link to github account](https://github.com/jonn1193/se_project_spots)
+- [Link to GitHub](https://jonn1193.github.io/se_project_spots)
 
 **Images**
 
 **Pitch Video**
+TODO(adding dark mode and 1-2 line clamp on mobile?)

@@ -1,9 +1,18 @@
+.card__title {
+  max-width: 353px;
+  font: 500 20px/1.2 "Poppins";
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .card__image {
   height: 413px;
   width: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .card__content {
@@ -30,6 +39,10 @@
 }
 
 @media screen and (max-width: 627px) {
+  .card__title {
+    max-width: 235px;
+  }
+
   .card__image {
     height: 288px;
   }
