@@ -1,8 +1,6 @@
 .profile {
   display: flex;
   padding: 34px 0 20px;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 
@@ -15,6 +13,7 @@
 .profile__column {
   display: flex;
   flex-direction: column;
+  align-items: start;
 }
 
 .profile__name {
@@ -42,7 +41,7 @@
 
 .profile__edit-button {
   gap: 8px;
-  padding: 10px 20px;
+  padding: 0;
   border: none;
   border-radius: 6px;
   background-color: transparent;
@@ -61,6 +60,7 @@
 
 .profile__add-button {
   margin-left: auto;
+  margin-top: auto;
   gap: 8px;
   padding: 10px 20px;
   border: none;
@@ -108,5 +108,7 @@
   }
   .profile__add-button {
     align-items: center;
+    margin: 0 auto;
+    width: 100%;
   }
 }
