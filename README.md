@@ -2,24 +2,32 @@
 
 ### Overview
 
-- Intro
+Spots is a responsive image-sharing web project that allows users to view a profile, see posts in card format, and interact with them via buttons. The project is designed to display correctly on a variety of screen sizes, including mobile and desktop.
+
+### Technologies & Techniques Used
+
+- HTML
+- CSS
+- Responsive design techniques
 - Figma
-- Images
-
-**Intro**
-
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+- Optimized Image
 
 **Figma**
 
-- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+- [Link to the project on Figma](https://www.figma.com/design/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project--Spots?node-id=51-396&t=ezD92p9LEsteC7tg-0)
 
 **Images**
-
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
-
-Good luck and have fun!
 
 **GitHub**
 
 - [Link to github account](https://github.com/jonn1193/se_project_spots)
+
+### Screenshots / Features
+
+![Profile section](./images/screenshot-profile.png)  
+_Profile section with avatar, name, description, and action buttons._
+
+![Cards section](./images/screenshot-cards.png)  
+_Cards section displaying images with titles and like buttons._
+
+### Pitch Video
