@@ -1,5 +1,5 @@
 .footer {
-  padding: 0 20px;
+  padding: 60px 20px;
 }
 
 .footer__text {
@@ -7,6 +7,6 @@
   font-size: 16px;
   line-height: 100%;
   color: #212121;
-  opacity: 0.4;
-  font-family: "Poppins";
+  opacity: 0.7;
+  font-family: "Poppins", Arial, Helvetica;
 }
