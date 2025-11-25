@@ -23,4 +23,4 @@ Spots is a responsive image-sharing web project that allows users to view a prof
 **Images**
 
 **Pitch Video**
-TODO(adding dark mode and 1-2 line clamp on mobile?)
+[Link to Project pitch](https://drive.google.com/file/d/1CjSOh9XPitw2IYqD7JEqebi-v2H1cjGc/view?usp=sharing)
