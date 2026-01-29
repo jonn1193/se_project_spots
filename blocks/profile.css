@@ -42,7 +42,7 @@
   -webkit-box-orient: vertical;
   font-size: 16px;
   font-weight: 500;
-  color: #212121;
+  color: rgba(33, 33, 33, 0.7);
 }
 
 .profile__edit-button {
@@ -57,7 +57,9 @@
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.2s, opacity 0.2s;
+  transition:
+    background-color 0.2s,
+    opacity 0.2s;
   opacity: 0.7;
   margin-top: auto;
 }
@@ -81,7 +83,9 @@
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.2s, box-shadow 0.2s;
+  transition:
+    background-color 0.2s,
+    box-shadow 0.2s;
   width: 157px;
   height: 52px;
 }
