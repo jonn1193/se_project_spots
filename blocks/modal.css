@@ -111,7 +111,6 @@
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
   transition: background-color 0.3s;
   max-width: 156px;
   width: 156px;
@@ -207,9 +206,10 @@
   opacity: 1;
   display: inline-block;
   align-self: flex-start;
-  max-width: min-content;
+  max-width: 100%;
   width: fit-content;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: break-word;
   position: relative;
 }
 
@@ -242,10 +242,16 @@
     align-self: stretch;
   }
 
-  .modal__close_type_preview {
+  .modal__close-button_type_preview {
     max-width: 100%;
     top: -48px;
     right: 0;
+  }
+
+  .modal__caption {
+    max-width: calc(100% - 16px);
+    font-size: 16px;
+    word-break: break-word;
   }
 }
 
