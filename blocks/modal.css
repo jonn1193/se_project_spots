@@ -105,6 +105,11 @@
   color: #212121;
 }
 
+.modal__input:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+}
+
 .modal__submit-button {
   padding: 12px 24px;
   background-color: #212121;
@@ -153,7 +158,8 @@
 .modal__container_type_preview {
   background: transparent;
   padding: 0;
-  max-width: unset;
+  width: unset;
+  max-width: 80vw;
   border-radius: 0;
   box-shadow: none;
   display: flex;
@@ -184,6 +190,7 @@
   height: 35px;
   transition: opacity 0.3s ease;
   z-index: 10;
+  padding: 0;
 }
 
 .modal__close-button_type_preview:hover {
@@ -213,6 +220,24 @@
   position: relative;
 }
 
+@media screen and (max-width: 627px) {
+  .modal__close-button_type_preview {
+    left: auto;
+    right: 0;
+    top: -45px;
+  }
+
+  .modal__close-button {
+    top: -40px;
+    right: 0;
+  }
+
+  .modal__image {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .modal__title {
     font-size: 20px;
@@ -229,6 +254,11 @@
   .modal__container {
     padding: 22px 12px 12px;
     position: relative;
+  }
+
+  .modal__container_type_preview {
+    padding: 0;
+    max-width: none;
   }
 
   .modal__close-button {
@@ -252,22 +282,5 @@
     max-width: calc(100% - 16px);
     font-size: 16px;
     word-break: break-word;
-  }
-}
-
-@media screen and (max-width: 627px) {
-  .modal__close-button_type_preview {
-    left: auto;
-    right: 0;
-    top: -45px;
-  }
-
-  .modal__close-button {
-    top: -40px;
-    right: 0;
-  }
-
-  .modal__image {
-    max-width: unset;
   }
 }
