@@ -1,18 +1,18 @@
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
-  document.addEventListener("keydown", handleEscClose);
+  document.addEventListener("keydown", closeOnEscape);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
-  document.removeEventListener("keydown", handleEscClose);
+  document.removeEventListener("keydown", closeOnEscape);
 }
 
-function handleEscClose(evt) {
+function closeOnEscape(evt) {
   if (evt.key === "Escape") {
-    const openModal = document.querySelector(".modal_is-opened");
-    if (openModal) {
-      closeModal(openModal);
+    const activeModal = document.querySelector(".modal_is-opened");
+    if (activeModal) {
+      closeModal(activeModal);
     }
   }
 }
