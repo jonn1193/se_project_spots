@@ -1,12 +1,3 @@
-const validationConfig = {
-  formSelector: ".modal__form",
-  inputSelector: ".modal__input",
-  submitButtonSelector: ".modal__submit-button",
-  inactiveButtonClass: "modal__submit-button_disabled",
-  inputErrorClass: "modal__input_type_error",
-  errorClass: "modal__error_visible",
-};
-
 const showInputError = (formEl, inputEl, errorMsg, config) => {
   const errorMsgEl = formEl.querySelector(`#${inputEl.id}-error`);
 
@@ -56,25 +47,14 @@ const setEventListeners = (formEl, config) => {
   toggleButtonState(inputList, buttonEl, config);
 
   inputList.forEach((inputEl) => {
-    inputEl.addEventListener("input", function () {
+    inputEl.addEventListener("input", () => {
       checkInputValidity(formEl, inputEl, config);
       toggleButtonState(inputList, buttonEl, config);
     });
   });
-
-  formEl.addEventListener("submit", (evt) => {
-    evt.preventDefault();
-  });
 };
 
-const enableValidation = (config) => {
-  const formList = document.querySelectorAll(config.formSelector);
-  formList.forEach((formEl) => {
-    setEventListeners(formEl, config);
-  });
-};
-
-const resetValidation = (formEl, config) => {
+export const resetValidation = (formEl, config) => {
   const inputList = Array.from(formEl.querySelectorAll(config.inputSelector));
   const buttonEl = formEl.querySelector(config.submitButtonSelector);
 
@@ -85,19 +65,18 @@ const resetValidation = (formEl, config) => {
   toggleButtonState(inputList, buttonEl, config);
 };
 
-const clearFormInputs = (formEl) => {
-  const inputs = Array.from(formEl.querySelectorAll(".modal__input"));
-  inputs.forEach((input) => {
-    if (input.type !== "button" && input.type !== "submit") {
-      input.value = "";
-    }
+export const enableValidation = (config) => {
+  const formList = document.querySelectorAll(config.formSelector);
+  formList.forEach((formEl) => {
+    setEventListeners(formEl, config);
   });
 };
 
-window.resetValidation = resetValidation;
-window.clearFormInputs = clearFormInputs;
-window.validationConfig = validationConfig;
-
-document.addEventListener("DOMContentLoaded", () => {
-  enableValidation(validationConfig);
-});
+export const validationConfig = {
+  formSelector: ".modal__form",
+  inputSelector: ".modal__input",
+  submitButtonSelector: ".modal__submit-button",
+  inactiveButtonClass: "modal__submit-button_disabled",
+  inputErrorClass: "modal__input_type_error",
+  errorClass: "modal__error_visible",
+};
